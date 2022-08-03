@@ -113,6 +113,12 @@
             font{
                 color: var(--danger-color);
             }
+            .loading{
+                div{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+            }
         }
     }
 
@@ -128,6 +134,31 @@
         border-radius: 20px;
         background-color: var(--cta-color);
     }
+
+    @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+      .fade-in {
+        animation: fade-in;
+        animation-duration: 2s;
+      }
+      .fade-out {
+        animation: fade-out;
+        animation-duration: 1s;
+      }
 
     @media (max-width: 600px){
         a, .option{

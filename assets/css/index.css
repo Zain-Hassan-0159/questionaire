@@ -116,6 +116,10 @@
 #questionaire .ques-box .results font {
   color: var(--danger-color);
 }
+#questionaire .ques-box .results .loading div {
+  font-size: 24px;
+  font-weight: 600;
+}
 #questionaire #myProgress {
   width: 100%;
   background-color: #ebebeb;
@@ -126,6 +130,50 @@
   height: 15px;
   border-radius: 20px;
   background-color: var(--cta-color);
+}
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+#questionaire .fade-in {
+  -webkit-animation: fade-in;
+          animation: fade-in;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+#questionaire .fade-out {
+  -webkit-animation: fade-out;
+          animation: fade-out;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 @media (max-width: 600px) {
   #questionaire a, #questionaire .option {
