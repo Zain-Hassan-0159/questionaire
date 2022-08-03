@@ -5,16 +5,89 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/index.css">
 
 
-    <title>Hello, world!</title>
+    <title>Questionaire</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div id="questionaire">
+      <div class="ques-box">
+        <div class="content">
+          <h1>Americans With Over $15,000 In Debt Could Receive Debt Elimination. Check Eligibility Below.</h1>
+          <img src="assets/aca.jpg" alt="check image">
+          <p>
+            <strong>Rarely Advertised Program is helping adults who have over $10,000 
+            in debt find relief from late payments and high-interest balances.</strong> 
+          </p>
+          <p>Millions of Americans are qualified to receive Financial Forgiveness through this new policy 
+            to relieve stress from Credit Card Payments, Medical Bills, Utility Payments, and other unsecured debts. 
+          </p>
+          <h2>How Do I Check If I Qualify?</h2>
+          <p>It's easy and completely free to check eligibility. Follow the steps below to get started. </p>
+          <ul>
+            <li><i class="check"></i><strong>Step 1: </strong> Confirm How Much You Owe</li>
+            <li><i class="check"></i><strong>Step 2: </strong> Choose What You Need Relief For</li>
+            <li><i class="check"></i><strong>Step 3: </strong> See If You Qualify to Claim Forgiveness</li>
+          </ul>
+        </div>
+        <div class="slides">
+          <div class="slide slide0">
+            <h2>Do You Live in The USA?</h2>
+            <div class="options">
+              <button class="option" data-option="1">Yes</button>
+              <button class="option" data-option="1">No</button>
+            </div>
+          </div>
+          <div class="slide slide1 d-none">
+            <h2>Click Below to Qualify for Debt Elimination</h2>
+            <div class="options">
+              <button class="option" data-option="2">Yes</button>
+              <button class="option" data-option="2">Without</button>
+              <button class="option" data-option="2">Other</button>
+            </div>
+          </div>
+          <div class="slide slide2 last d-none">
+            <h2>This is Qustion Three</h2>
+            <div class="options">
+              <button class="option" data-option="3">Ok</button>
+              <button class="option" data-option="3">Agree</button>
+              <button class="option" data-option="3">Other</button>
+            </div>
+          </div>
+        </div>
+        <div id="myProgress" class="d-none">
+          <div id="myBar"></div>
+        </div>
+        <div class="results d-none">
+          <div class="content">
+            <h3>Congratulations!</h3>
+            <div class="loadingCopy">You Pre-Qualify for
+              <b>
+                <font> Financial Forgiveness for Credit Card Payments, Medical Bills, and more. </font>
+              </b>
+            </div>
+            <p>
+              <strong>Click below to claim your relief before spots run out.</strong>
+            </p>
+            <a href="tel:12345678">CALL 123456789</a>
+            <p>
+              <strong>Act quickly!</strong>
+            </p>
+            <p>
+              <strong>This pre-approval expires in <span id="countingItem">02:00</span></strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/js/script.js"></script>
 
   </body>
